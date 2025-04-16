@@ -1,0 +1,413 @@
+/* 🌟 General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f4ff; /* Soft background */
+    color: #1f2937; /* Dark gray text */
+}
+
+/* 🌟 Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: linear-gradient(135deg, #042f5f, #0052cc); /* Groww-like gradient */
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #2dd4bf; /* Teal hover effect */
+}
+
+/* 🌟 Hero Section */
+.hero {
+    background: linear-gradient(120deg, #042f5f, #0052cc);
+    color: white;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0px 0px 30px 30px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero input {
+    padding: 12px;
+    width: 350px;
+    border: 2px solid #2dd4bf;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero input:focus {
+    border-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+.hero button {
+    padding: 12px 20px;
+    background-color: #2dd4bf;
+    border: none;
+    color: #042f5f;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.hero button:hover {
+    background-color: #23c3ad;
+}
+
+/* 🌟 Sections */
+section {
+    padding: 60px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+section:nth-child(even) {
+    background-color: #e8f1ff; /* Light Blue Alternate Sections */
+}
+
+/* 🌟 Footer */
+footer {
+    padding: 20px;
+    background: #042f5f;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* 🌟 Buttons */
+button {
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero button {
+        width: 100%;
+    }
+}
+
+/* 🌟 AI Prediction Section */
+#ai-prediction {
+    background-color: #f8fafc;
+    padding: 40px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 30px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#ai-prediction h2 {
+    font-size: 26px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+#ai-prediction p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Input Field */
+#search-stock {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #1e3a8a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 18px;
+    margin-left: 10px;
+    background-color: #1e3a8a;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f265f;
+}
+
+/* 🌟 Prediction Output */
+#prediction-output {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* 🌟 Table Styling */
+#prediction-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#prediction-table th, #prediction-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+#prediction-table th {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+#prediction-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#start-date, #end-date {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #1e3a8a;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* 🌟 Chart Container */
+.chart-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#predictionChart {
+    width: 100%;
+    max-height: 400px;
+}
+
+/* 🌟 Footer */
+footer {
+    padding: 15px;
+    background: #1e3a8a;
+    color: white;
+    font-size: 14px;
+}
+
+/* 🌟 Box Styling for Technical Analysis */
+#technical-analysis {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 30px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#technical-analysis h2 {
+    font-size: 26px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+#technical-analysis p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Input and Button Styling */
+#technical-analysis input {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #1e3a8a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#technical-analysis button {
+    padding: 12px 18px;
+    margin-left: 10px;
+    background-color: #1e3a8a;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#technical-analysis button:hover {
+    background-color: #0f265f;
+}
+
+/* 🌟 Center Align Content */
+#technical-analysis .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🌟 Loading Indicator */
+#loading-indicator {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+    display: none;
+}
+
+#fundamental-analysis {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 30px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #1e3a8a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f265f;
+}
+
+/* Output */
+#fundamental-output {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#stock-chart {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  canvas {
+    width: 100%;
+    max-height: 400px;
+  }
+  
+  .timeframe-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .timeframe-buttons button {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .timeframe-buttons button.active {
+    background: #00b894;
+    color: white;
+    font-weight: bold;
+  }
+  

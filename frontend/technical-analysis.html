@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Analysis | StockXpert</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JavaScript -->
+    <script defer src="technical-analysis.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">StockXpert</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prediction.html">AI Prediction</a></li>
+          <li>
+            <a href="technical-analysis.html" class="active"
+              >Technical Analysis</a
+            >
+          </li>
+          <li><a href="fundamental-analysis.html">Fundamental Analysis</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Technical Analysis Section -->
+    <section id="technical-analysis">
+      <div class="card">
+        <h2>📈 Technical Analysis</h2>
+        <p>
+          Analyze stock trends using moving averages, RSI, and candlestick
+          charts.
+        </p>
+
+        <!-- ✅ Stock Input Form -->
+        <form id="tech-analysis-form">
+          <label for="search-stock">🔍 Enter Stock Symbol:</label>
+          <input
+            type="text"
+            id="search-stock"
+            placeholder="e.g., RELIANCE"
+            required
+          />
+          <button type="submit">Analyze</button>
+        </form>
+
+        <!-- ✅ Output Container -->
+        <div id="analysis-output">
+          <p>Results will appear here...</p>
+        </div>
+      </div>
+
+      <!-- Stock Price Chart -->
+      <div class="card">
+        <h3>📊 Stock Price Trend</h3>
+        <canvas id="stockChart"></canvas>
+      </div>
+
+      <!-- Moving Averages -->
+      <div class="card">
+        <h3>📉 Moving Averages (SMA & EMA)</h3>
+        <canvas id="movingAverageChart"></canvas>
+      </div>
+
+      <!-- RSI Indicator -->
+      <div class="card">
+        <h3>📊 Relative Strength Index (RSI)</h3>
+        <canvas id="rsiChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 StockXpert. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

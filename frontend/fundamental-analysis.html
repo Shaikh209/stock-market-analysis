@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamental Analysis | StockXpert</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JavaScript -->
+    <script defer src="fundamental-analysis.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">StockXpert</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prediction.html">AI Prediction</a></li>
+          <li><a href="technical-analysis.html">Technical Analysis</a></li>
+          <li>
+            <a href="fundamental-analysis.html" class="active"
+              >Fundamental Analysis</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Fundamental Analysis Section -->
+    <section id="fundamental-analysis">
+      <h2>📊 Fundamental Analysis</h2>
+      <p>Analyze a company's financial health using key financial metrics.</p>
+
+      <!-- Stock Input Form -->
+      <form id="fundamental-form">
+        <label for="search-stock">🔍 Enter Stock Symbol:</label>
+        <input
+          type="text"
+          id="search-stock"
+          placeholder="e.g., RELIANCE"
+          required
+        />
+        <button type="submit">Analyze</button>
+      </form>
+
+      <!-- Fundamental Analysis Output -->
+      <div class="card">
+        <h3>📈 Key Financial Metrics</h3>
+        <div id="fundamental-output">Results will appear here...</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 StockXpert. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

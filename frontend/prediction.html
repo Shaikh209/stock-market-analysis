@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Stock Prediction | StockXpert</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JavaScript -->
+    <script defer src="prediction.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">StockXpert</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prediction.html" class="active">AI Prediction</a></li>
+          <li>
+            <a href="technical-analysis.html">Technical Analysis</a>
+          </li>
+          <li>
+            <a href="fundamental-analysis.html">Fundamental Analysis</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- AI Prediction Section -->
+    <section id="ai-prediction">
+      <h2>AI Stock Price Prediction</h2>
+      <p>View predicted stock prices based on AI analysis.</p>
+
+      <!-- Stock Prediction Form -->
+      <form id="prediction-form">
+        <label for="search-stock">Enter Stock Symbol:</label>
+        <input
+          type="text"
+          id="search-stock"
+          placeholder="e.g., RELIANCE"
+          required
+        />
+        <button type="submit">Get Prediction</button>
+      </form>
+
+      <!-- Display Prediction Result -->
+      <div id="prediction-output">Predictions will appear here...</div>
+
+      <!-- ✅ Prediction Table (Graph Removed) -->
+      <h3>Future Price Predictions</h3>
+      <table id="prediction-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Predicted Price (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Predictions will be dynamically added here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 StockXpert. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      // Attach event listener to prevent page refresh
+      document
+        .getElementById("prediction-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          fetchStockPrediction();
+        });
+    </script>
+  </body>
+</html>

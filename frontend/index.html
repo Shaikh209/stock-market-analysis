@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="logo">StockXpert</div>
+      <nav>
+        <ul>
+          <li><a href="prediction.html">AI Prediction</a></li>
+          <li><a href="technical-analysis.html">Technical Analysis</a></li>
+          <li><a href="fundamental-analysis.html">Fundamental Analysis</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Analyze Indian Stocks with AI & Technical Insights</h1>
+      <p>
+        Get real-time stock predictions, technical indicators, and fundamental
+        data.
+      </p>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-stock"
+          placeholder="Enter Stock Symbol (e.g., RELIANCE)"
+        />
+        <button id="search-button">Analyze</button>
+      </div>
+    </section>
+
+    <!-- Stock Price Chart Section -->
+    <section id="stock-chart">
+      <h2>Stock Price Chart</h2>
+      <canvas id="priceChart"></canvas>
+    </section>
+
+    <!-- Stock Market Data (Today’s Data) -->
+    <section id="stock-info">
+      <h2>Today's Stock Info</h2>
+      <p>Live stock market data for today (Open, High, Low, Close).</p>
+      <div id="stock-data">
+        <p><strong>📈 Open:</strong> <span id="stock-open">-</span></p>
+        <p><strong>📉 High:</strong> <span id="stock-high">-</span></p>
+        <p><strong>📊 Low:</strong> <span id="stock-low">-</span></p>
+        <p><strong>🔄 Close:</strong> <span id="stock-close">-</span></p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 StockXpert. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
