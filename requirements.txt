@@ -1,13 +1,13 @@
-pip install yfinance
-pip install pandas
-pip install numpy
-pip install matplotlib
-pip install seaborn
-pip install scikit-learn
-pip install statsmodels
-pip install ta
-pip install flask  # or fastapi (choose one)
-pip install flask-cors  # for frontend-backend integration
-pip install prophet           # Facebook Prophet – for advanced forecasting
-pip install plotly            # Interactive charts
-pip install alpha_vantage     # For alternative financial data
+yfinance
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+statsmodels
+ta
+flask  # or fastapi (choose one)
+flask-cors  # for frontend-backend integration
+prophet           # Facebook Prophet – for advanced forecasting
+plotly            # Interactive charts
+alpha_vantage     # For alternative financial data
