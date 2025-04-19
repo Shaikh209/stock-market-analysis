@@ -20,7 +20,7 @@ A stock analysis web app that offers AI-powered predictions, technical analysis,
 - 🧾 **Fundamental Analysis:** Company earnings, ratios, and financials
 
 ## 🔗 Live Demo
-_Coming soon or paste your link here_
+_Coming soon
 
 ## 📁 Folder Structure
 - `frontend/` – Static web pages and scripts
