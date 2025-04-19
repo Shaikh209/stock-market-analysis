@@ -29,7 +29,7 @@ _Coming soon
 ## 📬 Setup Instructions
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/stockxpert.git
+git clone (https://github.com/Shaikh209/stock-market-analysis.git)
 cd stockxpert
 
 # Run the backend API
